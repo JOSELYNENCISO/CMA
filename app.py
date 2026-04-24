@@ -32,18 +32,18 @@ if archivo is not None:
     # Tamaños automáticos
     n_puntos = len(df)
 
-    if n_puntos > 150:
-        size_punto = 6
-        size_texto = 4
-    elif n_puntos > 80:
-        size_punto = 10
-        size_texto = 6
-    elif n_puntos > 40:
-        size_punto = 25
-        size_texto = 9
-    else:
-        size_punto = 40
-        size_texto = 12
+ if n_puntos > 150:
+    size_punto = 25
+    size_texto = 5
+elif n_puntos > 80:
+    size_punto = 50
+    size_texto = 7
+elif n_puntos > 40:
+    size_punto = 90   
+    size_texto = 10
+else:
+    size_punto = 130   
+    size_texto = 12
 
     # Colores
     colores = {
